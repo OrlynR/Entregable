@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Car</title>
+</head>
+<body>
+    
+    <div class="contenedor">
+
+        <div class="encender">
+            <button type="submit" class="btn btn-encender" id="btn-encender">ON</button>
+        </div>
+
+        <div class="direccional">
+            <button type="submit" class="btn btn-direccional" id="btn-direccional"><i class="fas fa-sort-up"></i></button>
+        </div>
+
+        <div class="volante">
+            <button type="submit" class="btn btn-left" id="btn-left" onkeyup=girarDerechaArriba(this) onkeydown=girarDerechaAbajo(this)><i class="fas fa-arrow-left"></i></button>
+            <button type="submit" class="btn btn-right" id="btn-right"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="controles">
+            <button type="submit" class="btn btn-clutch" id="btn-clutch">CL</button>
+            <button type="submit" class="btn btn-freno" id="btn-freno">FR</button>
+            <button type="submit" class="btn btn-acelerador" id="btn-acelerador">AC</button>            
+        </div>
+
+        <div class="palanca">
+            <button type="submit" class="btn-p btn-r" id="btn-r">R</button>
+            <button type="submit" class="btn-p btn-1" id="btn-1">1</button>
+            <button type="submit" class="btn-p btn-3" id="btn-3">3</button>    
+            <button type="submit" class="btn-p btn-5" id="btn-5">5</button>
+            <button type="submit" class="btn-p btn-2" id="btn-2">2</button>
+            <button type="submit" class="btn-p btn-4" id="btn-4">4</button>    
+            <button type="submit" class="btn-p btn-6" id="btn-6">6</button>         
+        </div>
+
+        <div class="freno-mano">
+            <button type="submit" class="btn btn-fdm fdm" id="btn-fdm">FDM</button>             
+        </div>
+
+    </div>
+
+    <div class="mensaje" id="mensaje"></div>
+
+    <div class="mensaje2" id="mensaje2">
+        
+    </div>
+
+    <div class="mensaje3" id="mensaje3">
+
+    </div>
+    
+
+    <script src="js/index.js"></script>
+</body>
+</html>
